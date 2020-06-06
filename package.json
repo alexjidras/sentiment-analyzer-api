@@ -1,0 +1,32 @@
+{
+  "name": "sentiment-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && NODE_ENV=production node dist/index.js",
+    "start:dev": "NODE_ENV=development nodemon --watch 'lib/**/*.ts' --exec 'ts-node' lib/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "axios": "^0.19.2",
+    "chalk": "^4.0.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^8.0.8",
+    "koa-session": "^6.0.0",
+    "mongoose": "^5.9.15"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/node": "^13.13.4",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.9.1",
+    "typescript": "^3.8.3"
+  }
+}
